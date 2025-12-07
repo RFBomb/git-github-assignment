@@ -1,0 +1,19 @@
+Create a simple calculator program in C that can perform the following operations:
+
+    Addition
+    Subtraction
+    Multiplication
+    Division
+    Modulus
+
+The program should prompt the user to select an operation and input two integers. It should then perform the selected operation and display the result. The program should continue to run until the user chooses to exit.
+Requirements:
+
+    Menu Display: Display a menu of operations for the user to choose from.
+    Input Handling: Accept user input for the operation and two integers.
+    Function Implementation: Implement separate functions for each operation (addition, subtraction, multiplication, division, modulus).
+    Control Structure: Use a switch-case statement to call the appropriate function based on user choice.
+    Loop for Continuation: Use a loop to allow the user to perform multiple operations until they choose to exit.
+
+Complete each of the programming exercises individually. Submit screenshot of VSC or other compiler showing both code and output after successfully running each exercise.
+Be sure to review the attached grading rubric.

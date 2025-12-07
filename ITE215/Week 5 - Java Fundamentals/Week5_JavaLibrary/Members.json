@@ -1,0 +1,22 @@
+{"Members": [
+    {
+        "MemberId": 0,
+        "FirstName": "Kelcy",
+        "LastName": "Grammatically Incorrect"
+    },
+    {
+        "MemberId": 1,
+        "FirstName": "Joe",
+        "LastName": "Schmoe"
+    },
+    {
+        "MemberId": 2,
+        "FirstName": "Kyle",
+        "LastName": "McGee"
+    },
+    {
+        "MemberId": 3,
+        "FirstName": "Franky",
+        "LastName": "Reynolds"
+    }
+]}

@@ -1,0 +1,17 @@
+Instructions:
+Create a Go program that performs the following:
+
+    Prompt the user to enter two integers.
+    Read the integers from the user input.
+    Compute the sum of the two integers.
+    Display the result to the user.
+
+Create a Rust program that performs the following:
+
+    Prompt the user to enter two integers.
+    Read the integers from the user input.
+    Compute the sum of the two integers.
+    Display the result to the user.
+
+Requirements:
+Complete each of the programming exercises individually. Submit screenshot of Thonny showing both code and output after successfully running each exercise.

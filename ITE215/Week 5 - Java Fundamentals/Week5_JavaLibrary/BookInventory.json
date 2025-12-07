@@ -1,0 +1,120 @@
+{
+    "ISBNs": [
+        {
+            "ISBN": "978-0743273565",
+            "Author": "F. Scott Fitzgerald",
+            "Title": "The Great Gatsby"
+        },
+        {
+            "ISBN": "978-0451526342",
+            "Author": "George Orwell",
+            "Title": "Animal Farm"
+        },
+        {
+            "ISBN": "978-0141439518",
+            "Author": "Jane Austen",
+            "Title": "Pride and Prejudice"
+        },
+        {
+            "ISBN": "978-0451524935",
+            "Author": "George Orwell",
+            "Title": "1984"
+        },
+        {
+            "ISBN": "978-0061122415",
+            "Author": "Paulo Coelho",
+            "Title": "The Alchemist"
+        },
+        {
+            "ISBN": "978-0345391803",
+            "Author": "Douglas Adams",
+            "Title": "The Hitchhiker's Guide to the Galaxy"
+        }
+    ],
+    "Inventory": [
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0743273565",
+            "id": 0,
+            "memberID": -1
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0743273565",
+            "id": 1,
+            "memberID": -1
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0743273565",
+            "id": 2,
+            "memberID": -1
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0451524935",
+            "id": 3,
+            "memberID": 2
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0451524935",
+            "id": 4,
+            "memberID": 1
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0451524935",
+            "id": 5,
+            "memberID": -1
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0451524935",
+            "id": 6,
+            "memberID": 0
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0061122415",
+            "id": 7,
+            "memberID": -1
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0061122415",
+            "id": 8,
+            "memberID": -1
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0141439518",
+            "id": 9,
+            "memberID": -1
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0141439518",
+            "id": 10,
+            "memberID": -1
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0141439518",
+            "id": 11,
+            "memberID": -1
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0451526342",
+            "id": 12,
+            "memberID": -1
+        },
+        {
+            "checkoutDate": -1,
+            "isbn": "978-0451526342",
+            "id": 13,
+            "memberID": -1
+        }
+    ]
+}
