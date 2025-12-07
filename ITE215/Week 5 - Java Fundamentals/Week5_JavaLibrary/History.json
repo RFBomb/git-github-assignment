@@ -1,0 +1,14 @@
+{"History": [
+    {
+        "MemberId": 1,
+        "BookId": 1,
+        "CheckInDate": 1764538047234,
+        "CheckoutDate": 1764538031964
+    },
+    {
+        "MemberId": 3,
+        "BookId": 2,
+        "CheckInDate": 1764547762950,
+        "CheckoutDate": 1764547559648
+    }
+]}
