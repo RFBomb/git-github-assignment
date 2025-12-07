@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+    Robert Brenckman
+    Charter Oak - ITE217
+    Factory Pattern using JavaScript
+    - This web page uses the factory pattern to create shapes specified by the user.
+    - The user selects the type of shape and the color of the shape.
+    - When the user presses the 'Create Shape' button, the javascript method will create a shape with those specifications.
+    - The shape will be placed within the shareArea div.
+
+    This is a good representation of the factory pattern because it allows runtime creation of objects (in this case shapes) on the fly based on input parameters.
+    In other languages, the factory pattern is often used to instantiate objects that are more complex.
+    
+    One such example is the 'IRoboCommandFactory' (https://github.com/PCAssistSoftware/RoboSharp/blob/dev/RoboSharp/Interfaces/IRoboCommandFactory.cs)
+    That link showcases an interface that I had created for Dependency Injection for use in an application that generates RoboCopy commands on the fly for file sync.
+    The factory would be able to customize the options or provide custom implementations of IRoboCommand instead of the default imnplementation from that lib.
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shape Factory</title>
+    <style>
+        #shapeArea {
+            width: 600px;
+            height: 400px;
+            border: 2px solid #000;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .shape {
+            position: absolute;
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+
+        .square {
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px solid;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select Shape:</h2>
+    <label><input type="radio" name="shape" value="circle" checked> Circle</label>
+    <label><input type="radio" name="shape" value="square"> Square</label>
+    <label><input type="radio" name="shape" value="triangle"> Triangle</label>
+
+    <h2>Select Color:</h2>
+    <label><input type="radio" name="color" value="blue" checked> Blue</label>
+    <label><input type="radio" name="color" value="green"> Green</label>
+    <label><input type="radio" name="color" value="black"> Black</label>
+    <label><input type="radio" name="color" value="red"> Red</label>
+    <label><input type="radio" name="color" value="yellow"> Yellow</label>
+
+    <br><br>
+    <button id="createShape">Create Shape</button>
+
+    <div id="shapeArea"></div>
+
+    <script>
+        // Factory function to create shapes
+        function ShapeFactory(shapeType, color) {
+            let shape = document.createElement('div');
+            shape.classList.add('shape');
+
+            switch (shapeType) {
+                case 'circle':
+                    shape.classList.add('circle');
+                    shape.style.width = '50px';
+                    shape.style.height = '50px';
+                    break;
+                case 'square':
+                    shape.classList.add('square');
+                    shape.style.width = '50px';
+                    shape.style.height = '50px';
+                    break;
+                case 'triangle':
+                    shape.classList.add('triangle');
+                    shape.style.borderBottomColor = color;
+                    break;
+            }
+
+            if (shapeType !== 'triangle') {
+                shape.style.backgroundColor = color;
+            }
+
+            // Random position within the shape area
+            const area = document.getElementById('shapeArea');
+            const maxX = area.clientWidth - 50;
+            const maxY = area.clientHeight - 50;
+            shape.style.left = Math.random() * maxX + 'px';
+            shape.style.top = Math.random() * maxY + 'px';
+
+            area.appendChild(shape);
+        }
+
+        // Adds the event listener to the button when the document loads.
+        document.getElementById('createShape').addEventListener('click', () => {
+            const shapeType = document.querySelector('input[name="shape"]:checked').value;
+            const color = document.querySelector('input[name="color"]:checked').value;
+            ShapeFactory(shapeType, color);
+        });
+    </script>
+</body>
+</html>

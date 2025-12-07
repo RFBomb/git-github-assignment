@@ -1,0 +1,18 @@
+﻿<Window x:Class="ITE217_Week4_SingletonPattern.Views.PopupOne"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ITE217_Week4_SingletonPattern.Views"
+        mc:Ignorable="d"
+        ResizeMode="CanResize" SizeToContent="WidthAndHeight"
+        xmlns:FF="clr-namespace:MvvmDialogs;assembly=MvvmDialogs"
+        FF:DialogServiceViews.IsRegistered="True"        
+        Title="{Binding WindowTitle, FallbackValue='Popup One'}" Height="250" Width="300"
+        Closing="Window_Closing"
+        >
+    <StackPanel>
+        <TextBlock Text="{Binding WindowTitle}" />
+        <Button Content="Close" Command="{Binding CloseCommand}"/>
+    </StackPanel>
+</Window>
