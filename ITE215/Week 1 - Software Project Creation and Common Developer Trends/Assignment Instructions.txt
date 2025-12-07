@@ -1,0 +1,36 @@
+Descrption:
+The objective of this assignment is to develop an understanding of the best practices in writing clean, efficient, and maintainable code. You will research various coding best practices, summarize your findings, and demonstrate how to apply these practices in a sample piece of code.
+Instructions:
+
+    Research Phase:
+        Conduct research on the best practices in writing code. Consider multiple programming languages and paradigms if applicable. Focus on areas such as:
+            Code readability and formatting
+            Commenting and documentation
+            Naming conventions
+            Code efficiency and performance
+            Error handling and debugging
+            Version control
+            Code testing (unit tests, integration tests, etc.)
+	    Security practices
+        Utilize credible sources such as academic papers, books, reputable websites, and expert blogs.
+
+    Summary of Findings
+        Write a summary of your findings in a well-structured document. This section should be approximately 1000-1500 words and cover the following points:
+            Key principles of writing clean code
+            Examples of best practices in different programming languages (e.g., Python, Java, JavaScript)
+            Common pitfalls and how to avoid them
+            The importance of adhering to these practices in professional software development
+
+    Application of Best Practices:
+        Write a piece of sample code (approximately 50-100 lines) in a programming language of your choice. The code should solve a simple problem or perform a specific task.
+        Apply the best practices you have researched to this code. Include comments, proper naming conventions, error handling, and any other relevant practices.
+        Provide a before-and-after comparison if applicable, demonstrating how your initial version of the code has been improved by applying these practices. 
+
+Requirements:
+Your assignment should be structured as follows:
+
+    Title Page: Include the title of the assignment, your name, and the date.
+    Summary of Findings
+    Sample Code
+    Explanation of Best Practices Applied
+    References 
